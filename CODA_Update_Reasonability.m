@@ -10,8 +10,8 @@
 %PERSONAL NOTE: Similar to the trust extension - much easier to understand and
 %implement, at least in the ways in which I have done it. 
 
-para = struct('N',50,'alpha',0.6,'beta',0.9);
-maxtime = 1000000;
+para = struct('N',50,'alpha',0.55,'beta',0.55);
+maxtime = 5000000;
 
 %Setting up initial matrices for opinions, log opinions and actions.
 
@@ -158,16 +158,16 @@ for i=2:maxtime
         
         
                                                    
-%Plotting the final action matrix as opinion map - also allowing it to show
-%model running in real time.
-    
-figure(2)
-C = lattice_action;
-s = pcolor(C);
-s.EdgeColor = 'none';
-colormap(gray(2))
-axis ij;
-axis square;
+% %Plotting the final action matrix as opinion map - also allowing it to show
+% %model running in real time.
+%     
+% figure(2)
+% C = lattice_action;
+% s = pcolor(C);
+% s.EdgeColor = 'none';
+% colormap(gray(2))
+% axis ij;
+% axis square;
 end
 
 %Plotting the final action matrix as opinion map.

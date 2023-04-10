@@ -5,14 +5,15 @@
 %similar Bayesian rule.
 
 para = struct('N',50,'alpha',0.55,'beta',0.55);
-maxtime = 1000000;
+maxtime = 5000000;
 
-%Setting up initial matrices for opinions, log opinions and actions.
+%Setting up initial matrices for opinions, log opinions, trust and actions.
 
 lattice_opinion = zeros([para.N para.N]);
 lattice_op_log = zeros([para.N para.N]);
 lattice_action = zeros([para.N para.N]);
 lattice_trust = 0.5.*ones([para.N^2 para.N^2]);
+
 for x=1:para.N^2*para.N^2
     lattice_trust(x,x)=1;
 end
@@ -46,7 +47,8 @@ end
 
 figure(1)
 C = lattice_action;
-pcolor(C)
+s = pcolor(C);
+s.EdgeColor = 'none';
 colormap(gray(2))
 axis ij
 axis square
@@ -157,25 +159,28 @@ for i=2:maxtime
     end
     
     
-%Plotting the final action matrix as opinion map.
-    
-figure(2)
-C = lattice_action;
-pcolor(C);
-colormap(gray(2));
-axis ij;
-axis square;
+% %Plotting the final action matrix as opinion map.
+%     
+% figure(2)
+% C = lattice_action;
+% s = pcolor(C);
+% s.EdgeColor = 'none';
+% colormap(gray(2))
+% axis ij
+% axis square
 end
 
 %Plotting the final action matrix as opinion map.
 
 figure(2)
 C = lattice_action;
-pcolor(C)
+s = pcolor(C);
+s.EdgeColor = 'none';
 colormap(gray(2))
 axis ij
 axis square
 toc
+
 
 % nu = log(para.alpha/(1-para.alpha));
 % 

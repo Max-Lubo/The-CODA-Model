@@ -1,6 +1,7 @@
 %Script for running the CODA model on a von Neumann neighbourhood extende
 %to include the presence of contrarians in the population (agents who are
-%influeced opposite to what they observe).
+%influeced opposite to what they observe). Parameter c defines the
+%proportion of the population that are contrarians.
 clear all
 
 para = struct('N',50,'alpha',0.55,'beta',0.55,'c',1);

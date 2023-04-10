@@ -1,7 +1,8 @@
 %Script for running the CODA model on a Moore neighbourhood (8 neighbours)
 %as opposed to a von Neumann neighbourhood (4 neighbours), noting that
 %agents on the boundary of the lattice are still mirrored when making an
-%observation off of the lattice.
+%observation off of the lattice. This script also includes the option to
+%have contrarians in the population,
 clear all
 
 para = struct('N',50,'alpha',0.55,'beta',0.55,'c',1);

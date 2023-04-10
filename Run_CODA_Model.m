@@ -10,8 +10,8 @@
 %for the base case, agents should assume they're neighbours are trustowrthy
 %and that either action holds equal weight, so we set beta = alpha > 0.5.
 
-para = struct('N',50,'alpha',0.95,'beta',0.95);
-maxtime = 500000000;
+para = struct('N',50,'alpha',0.55,'beta',0.55);
+maxtime = 50000000;
 
 %Setting up initial matrices for opinions, log opinions and agent actions.
 

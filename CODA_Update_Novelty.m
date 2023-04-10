@@ -4,7 +4,7 @@
 %"Novelty period" of length T, with diminishing returns as the end of the novelty period is approached.
 
 para = struct('N',50,'alpha',0.55,'beta',0.55,'T',10000);
-maxtime = 50000;
+maxtime = 5000000;
 
 %Setting up initial matrices for opinions, log opinions and agent actions.
 
@@ -120,19 +120,19 @@ for k=1:maxtime
     
     end
     
-    %Plotting the final action matrix as opinion map - also allowing it to show
-    %model running in real time.
-    
-    figure(2)
-    C = lattice_action;
-    s = pcolor(C);
-    s.EdgeColor = 'none';
-    colormap(gray(2))
-    axis ij;
-    axis square;
+%     %Plotting the final action matrix as opinion map - also allowing it to show
+%     %model running in real time.
+%     
+%     figure(2)
+%     C = lattice_action;
+%     s = pcolor(C);
+%     s.EdgeColor = 'none';
+%     colormap(gray(2))
+%     axis ij;
+%     axis square;
 
 
-  end
+end
 
 
 %Plotting the final action matrix as opinion map.
@@ -147,3 +147,9 @@ axis square
 toc
     
   
+% nu = log(para.alpha/(1-para.alpha));
+% 
+% lat_op_dist = 1/nu .* lattice_op_log;
+
+% figure(3)
+% histogram(lattice_opinion(:),'numbins',50,'normalization','probability')
