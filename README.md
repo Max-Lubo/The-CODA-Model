@@ -30,5 +30,4 @@ Martins. A, 2009, The Importance of Disagreeing: Contrarians and Extremism in th
 This code was created as part of the MA4K8 Maths in Action Project.
 
 Max Lubowiecki.
-
 Warwick Mathematics Institute.
