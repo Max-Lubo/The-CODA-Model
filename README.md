@@ -11,6 +11,9 @@ The primary output of each file is the opinion map both at t=0 and at the maximu
 maps updating in real time (by uncommenting the the relevant plotting code towards the end of the for loop).
 Each file also includes a method for plotting opinion change histograms for the population at the maximum time of the model.
 
+The equations used in these files is based on the papers of A. Martins below:
+
+
 This code was created as part of the MA4K8 Maths in Action Project.
 Max Lubowiecki.
 Warwick Mathematics Institute.
