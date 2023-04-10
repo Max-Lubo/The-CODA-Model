@@ -11,8 +11,15 @@ The primary output of each file is the opinion map both at t=0 and at the maximu
 maps updating in real time (by uncommenting the the relevant plotting code towards the end of the for loop).
 Each file also includes a method for plotting opinion change histograms for the population at the maximum time of the model.
 
-The equations used in these files is based on the papers of A. Martins below:
+The mathematical equations used in these files are based on the papers of A. Martins below:
 
+Martins. A, 2008, Continuous Opinions and Discrete Actions in Opinion Dynamics Problems.
+Martins. A, 2008, Bayesian Updating Rules in Continuous Opinion Dynamics Models.
+Martins. A, 2021, Agent mental models and Bayesian rules as a tool to create opinion dynamics models.
+Martins et al, 2009, An opinion dynamics model for the diffusion of innovations.
+Martins. A, 2008, Mobility and social network effects on extremist opinions.
+Martins. A, 2013, Trust in the CODA model: Opinion dynamics and the reliability of other agents.
+Martins. A, 2009, The Importance of Disagreeing: Contrarians and Extremism in the CODA model.
 
 This code was created as part of the MA4K8 Maths in Action Project.
 Max Lubowiecki.
